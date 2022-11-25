@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section{
+    font-family: 'EloquiaText';
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 65px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101ADF;
+    max-width: 1600px;
+    width: 100%;
+    height: 757px;
+    border-radius: 87px 87px 87px 87px;
+}
+
+.card{
+    width: 100%;
+}
+
+.card-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.card-items .banner-img{
+    border-radius: 87px 87px 87px 87px;
+}
+
+.card-items .banner-img-mobile{
+    display: none;
+}
+
+.card-items .text-block{
+    margin-left: 5rem;
+}
+
+.card-items .text-block .text{
+    max-width: 785px;
+    margin-bottom: 60px;
+}
+
+.card-items .text-block .logo-img{
+    margin-bottom: 50px;
+}
+
+.card-items .text-block .button{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 991px){
+
+    body{
+        height: fit-content;
+    }
+
+    .section{
+        border-radius: 50px;
+        height: auto;
+    }
+
+    .card-items{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .card-items .banner-img{
+        display: none;
+    }
+
+    .card-items .banner-img-mobile{
+        display: block;
+        width: 100vw;
+        border-radius: 50px;
+    }
+
+    .card-items .text-block .text{
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 50px;
+        padding: 0 10px 0 10px;
+    }
+    
+    .card-items .text-block .logo-img{
+        margin-top: 70px;
+        margin-bottom: 60px;
+        width: 250px;
+    }
+
+    .card-items .text-block .button{
+        cursor: pointer;
+        width: 80vw;
+        margin-bottom: 60px;
+    }
+
+    .card-items .text-block{
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@font-face {
+    font-family: 'EloquiaText';
+    src: local('EloquiaText'), url('../fonts/EloquiaTextRegular/EloquiaText-Regular.eot');
+    src: local('EloquiaText'), url('../fonts/EloquiaTextRegular/EloquiaText-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/EloquiaTextRegular/EloquiaText-Regular.svg#EloquiaText-Regular') format('svg'),
+         url('../fonts/EloquiaTextRegular/EloquiaText-Regular.ttf') format('truetype'),
+         url('../fonts/EloquiaTextRegular/EloquiaText-Regular.woff') format('woff'),
+         url('../fonts/EloquiaTextRegular/EloquiaText-Regular.woff2') format('woff2');
+  }
