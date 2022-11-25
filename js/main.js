@@ -11,3 +11,7 @@ document.getElementById('button').addEventListener('click', function() {
         window.open(`https://wa.me/5534998394102?text=Quero%20receber%20meu%20sal%C3%A1rio%20antes`, '_blank');
     }
 });
+
+document.getElementById('logo').addEventListener('click', function() {
+    window.open(`https://www.socialbank.com.br/`, '_blank');
+});

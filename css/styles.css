@@ -53,6 +53,7 @@ body{
 
 .card-items .text-block .logo-img{
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 .card-items .text-block .button{
